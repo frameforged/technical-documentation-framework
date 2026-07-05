@@ -44,6 +44,7 @@ Unless the user specifies otherwise:
 | Audience | Developers, technical product teams, and architects |
 | Depth | Medium to advanced |
 | Output format | Whatever the user requests (DOCX, PDF, HTML, slides, ...); Markdown when unspecified |
+| Visual design | Brand-aware and information-first, per `rules/document-design-rules.md` |
 | Writing voice | Natural, human, per `rules/natural-writing-rules.md` |
 | Glossary | Required |
 | Examples | Required |
@@ -238,15 +239,17 @@ docs/
 
 ### Phase 10 — Format and Delivery
 
-Read: `output-formats/SKILL.md`
+Read: `output-formats/SKILL.md` and `rules/document-design-rules.md`
 
 Goal:
-Deliver the reviewed documentation in the format the user requested.
+Deliver the reviewed documentation in the format the user requested, with a visual design that is professional, information-first, and branded to the company the document belongs to.
 
 Expected output:
 
 - The final artifact in the requested format (DOCX, PDF, HTML, slides, or Markdown), written to disk and verified
+- For DOCX/PDF: brand palette researched from the owning company's official identity materials; cover page with metadata table; TOC field; part dividers and numbered chapters; callout boxes, branded tables, styled code blocks; figures renumbered in reading order with a figure index appendix
 - Screenshots or rendered diagrams embedded where the content calls for them
+- Schema validation passed and rendered sample pages visually inspected; when redesigning an existing document, a content-loss probe run against the source
 - The source Markdown package alongside the converted artifact, unless the user declines it
 
 Skip the conversion step only when Markdown itself is the requested deliverable. Never skip the verification step: an artifact that was not opened and checked is not delivered.
@@ -273,6 +276,7 @@ When the request is to update documentation rather than create it, do not rerun 
 10. The final output must be publishable in the requested format; the working format is clean Markdown.
 11. Documentation must be written in the language of the user's conversation unless explicitly overridden.
 12. The text must pass the natural-writing self-check in `rules/natural-writing-rules.md`. Documentation that reads machine-generated is a QA failure regardless of technical accuracy.
+13. Formatted deliverables (DOCX, PDF) must pass the design self-check in `rules/document-design-rules.md`: brand-sourced palette, complete document anatomy, information rendered visible (tables, callouts, figure index), and a verified, content-complete artifact. Default styling on a formatted deliverable is a QA failure.
 
 ## Final response behavior
 

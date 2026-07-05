@@ -55,9 +55,14 @@ Some documentation needs pictures: a settings screen, a dashboard, terminal outp
 
 File conventions: store captures as `assets/NN-short-description.png`, numbered in document order. Every image gets a caption and is referenced from the text ("Figure 3 shows the retry queue after a failed delivery") — an image the text never mentions gets deleted.
 
+## Visual design
+
+Formatted deliverables (DOCX, PDF) follow `rules/document-design-rules.md` in full. The short version: research the owning company's official brand palette before styling anything and map it to fixed roles (headings, accents, callouts); build the complete document anatomy (branded cover with metadata table, TOC field, part dividers for long documents, numbered chapters, header/footer); convert enumerable prose to branded tables and callout boxes; renumber figures in reading order and generate a figure index appendix; then validate the OOXML schema, render sample pages to images and inspect them, and — when redesigning an existing document — run a content-loss probe against the source.
+
 ## Format-specific quality bar
 
 **DOCX**
+- Everything in `rules/document-design-rules.md`, including its §7 self-check.
 - Title page: document title, product name, version or date. No author block unless the user provides one.
 - Automatic table of contents after the title page.
 - Native heading styles (Heading 1–4), not bold body text pretending to be headings.

@@ -45,7 +45,7 @@ python3 scripts/convert.py docs/ --to docx -o product-documentation.docx \
     --title "Product Documentation" --toc
 ```
 
-DOCX and PDF outputs get a title page, automatic table of contents, native heading styles, and page numbers. HTML output is a single self-contained file. Screenshots and rendered diagrams live in `docs/assets/` and are embedded automatically. [output-formats/SKILL.md](output-formats/SKILL.md) covers capture conventions, per-format quality checks, and what to do when pandoc is unavailable.
+DOCX and PDF outputs get a branded cover page, automatic table of contents, native heading styles, page numbers, and a visual design derived from the owning company's official brand palette — callout boxes, branded tables, styled code blocks, and a figure index, per [rules/document-design-rules.md](rules/document-design-rules.md). HTML output is a single self-contained file. Screenshots and rendered diagrams live in `docs/assets/` and are embedded automatically. [output-formats/SKILL.md](output-formats/SKILL.md) covers capture conventions, per-format quality checks, and what to do when pandoc is unavailable.
 
 ## Language behavior
 
@@ -90,6 +90,7 @@ technical-documentation-framework/
 │   ├── architecture-documentation-rules.md
 │   ├── security-and-compliance-rules.md
 │   ├── maintenance-rules.md     # Updates, versioning, deprecations, release notes
+│   ├── document-design-rules.md # Brand-aware visual design for DOCX/PDF deliverables
 │   └── qa-rubric.md
 ├── product-discovery/           # Phase skills (one directory per phase)
 ├── audience-alignment/

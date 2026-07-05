@@ -80,3 +80,4 @@ Documentation cannot be marked ready if any of these are true:
 - The documentation is not written in the required language.
 - The text fails the natural-writing self-check — it reads machine-generated (template openers, term stacking, uniform rhythm, filler intensifiers).
 - The user requested a specific output format and the artifact was not produced or not verified.
+- A formatted deliverable (DOCX/PDF) ships with default styling or fails the design self-check in `document-design-rules.md` — no brand-sourced palette, missing cover/TOC/header/footer, figures out of reading order, or an unexplained content loss against the source document.
