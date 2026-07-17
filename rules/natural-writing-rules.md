@@ -76,6 +76,18 @@ Bolding every noun, turning every paragraph into a bullet list, inserting a tabl
 
 "This may potentially improve performance in certain scenarios" says nothing. Either state what improves, by how much, and when — or label it honestly as unverified and move it to the assumptions list.
 
+### 9. Punctuation tells: em dashes, semicolons, arrow chains
+
+The em dash ("—") and the semicolon are the two strongest punctuation-level signs of generated text. A human explaining something across a desk writes short sentences; a model glues clauses together with dashes and semicolons. In body prose:
+
+- **No em dashes.** Where a dash would sit, use a comma, a parenthesis, or start a new sentence. "The binding is preserved — the agent does not break silently" becomes "The binding is preserved, so the agent does not break silently."
+- **No semicolons.** Two clauses joined by a semicolon are two sentences. Write them as two sentences.
+- **No arrow chains in prose.** "null → default" belongs in a table cell or code, not in a sentence. In prose write "if null, the default applies."
+
+These marks stay acceptable where they are notation rather than prose: code, literal values (`ACTIVE→RETIRED` as an enum transition), and compact table-cell shorthand. Everywhere the reader reads full sentences, they go.
+
+This applies in every language. In Turkish the same fixes hold: "değildir; ... türüdür" becomes "değildir, ... türüdür" or two sentences, and "tanımlar — örneğin ..." becomes "tanımlar. Örneğin ...".
+
 ## Explain with examples, always
 
 An abstract definition alone is never enough. When introducing a concept, a configuration choice, or a limit, attach one of:
@@ -104,6 +116,7 @@ After drafting any section, reread it once with these questions. The first draft
 5. Does any paragraph open with "This section..." or close with "In conclusion..."? Rewrite.
 6. Are there bullet lists that should be prose, or bold text that earns nothing? Flatten them.
 7. Read the hardest paragraph aloud. Where you stumble, the reader will too.
+8. Search the text for "—" and ";" in body prose. Rewrite each hit as separate sentences, a comma, or a parenthesis (see pattern 9).
 
 ## Non-negotiable balance
 
